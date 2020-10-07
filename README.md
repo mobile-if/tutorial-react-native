@@ -17,11 +17,11 @@ See [Getting Started](https://reactnative.dev/docs/getting-started.html) to inst
 
 ```$ npm start```
 
-###H3 iOS
+### H3 iOS
 
 ```$ npm run ios```
 
-###H3 Android
+### H3 Android
 
 ```$ npm run android```
 
