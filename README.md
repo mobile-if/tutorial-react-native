@@ -2,26 +2,26 @@
 Tutorial membuat aplikasi mobile dengan menggunakan React Native Expo
 ***
 
-## H2 Included
+## Included
 * React & React Native
 * React Navigation
 * Expo
 
-## H2 Instalasi
+## Instalasi
 See [Getting Started](https://reactnative.dev/docs/getting-started.html) to install requirement tools.
 
  ```$ npm install```
 
-## H2 Development
-### H3 Start local server
+## Development
+### Start local server
 
 ```$ npm start```
 
-### H3 iOS
+### iOS
 
 ```$ npm run ios```
 
-### H3 Android
+### Android
 
 ```$ npm run android```
 
