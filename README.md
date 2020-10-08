@@ -19,70 +19,35 @@ JSX atau bisa dibilang extended javascript adalah suatu pengembangan javascript 
 <p>Pokoknya MIS IMBA!!!</p>
 ```
 - Penulisan kode Javascript menggunakan {}
-```
-import React from 'react';
-
-export default class App extends React.Component {
-   render() {
-      return (
-         <div>
-            <h1>{ 1 + 1 }</h1>
-            { // End of the line Comment... }
-            { /* Multi line comment... */ }
-         </div>
-      );
-   }
-}
+```html
+<div>
+   <h1>{ 1 + 1 }</h1>
+   { // End of the line Comment... }
+   { /* Multi line comment... */ }
+</div>
 ```
 - Penulisan if else
-```
-import React from 'react';
+```html
+var i = 1;
 
-export default class App extends React.Component {
-   render() {
-
-      var i = 1;
-
-      return (
-         <div>
-            <h1>{ i == 1 ? 'True!' : 'False' }</h1>
-         </div>
-      );
-   }
-}
+<div>
+   <h1>{ i == 1 ? 'True!' : 'False' }</h1>
+</div>
 ```
 - CSS styling
-```
-import React from 'react';
-
-export default class App extends React.Component {
-   render() {
-
-      var myStyle = {
-         fontSize: 100,
-         color: '#FF0000'
-      }
-
-      return (
-         <div>
-            <h1 style={myStyle}>Header</h1>
-         </div>
-      );
-   }
+```html
+var myStyle = {
+   fontSize: 100,
+   color: '#FF0000'
 }
+
+<div>
+   <h1 style={myStyle}>Header</h1>
+</div>
 ```
 - Penulisan component react diawali huruf kapital. **TIDAK** disarankan mencoba ini
-```
-import React from 'react';
-import Header from './components/header.jsx';
-
-export default class App extends React.Component {
-   render() {
-      return (
-         <Header />
-      );
-   }
-}
+```html
+<Header />
 ```
 
 ***
