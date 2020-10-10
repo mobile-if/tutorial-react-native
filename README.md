@@ -35,10 +35,28 @@ Tutorial membuat aplikasi mobile dengan menggunakan React Native Expo
 - Dengan begitu React Native berjalan layaknya aplikasi native.
   
 
+### Apa saja jenis-jenis template React Native?
+Dalam membuat project React Native baru, terdapat beberapa jenis template yang dapat digunakan.
+1. Expo Managed Workflow  
+   Template ini merupakan template pertama yang ditawarkan oleh Expo. Template ini memberikan kemudahan dalam mendevelop 
+   aplikasi karena tidak memerlukan native SDK (Software Development Kit Android/iOS) dalam mengcompile aplikasi React Native. 
+   Dengan begitu pembuatan aplikasi iOS dapat dilakukan tanpa harus memiliki Xcode, begitu pula pada aplikasi Android. 
+   Namun kekurangan dari template ini adalah tidak memungkinkan untuk membuat kode native sendiri sehingga memiliki 
+   keterbatasan fitur sesuai dengan apa yang diberikan oleh Expo.  
+2. Expo Bare Workflow  
+   Template ini merupakan template lanjutan yang dikembangkan oleh Expo. Berbeda dengan Managed Workflow, Bare Workflow
+   memungkinkan penambahan kode native sendiri sehingga pembuatan aplikasi ini tidak terkena limitasi fitur yang diberikan 
+   oleh Expo. Dengan begitu perlu adanya SDK untuk mengcompile aplikasi React Native ini.
+3. React Native CLI  
+   Berbeda dengan kedua template di atas, React Native CLI merupakan template standar yang dikembangkan oleh React Native Community.
+   Template ini sama seperti Expo Bare Workflow hanya saja pada template ini tidak memiliki fitur-fitur yang diberikan Expo. 
+
+
 ### Pustaka
 - [React](https://reactjs.org/)
 - [React Native](https://reactnative.dev/)
 - [We Talk IT "React Native: What it is and how it works"](https://medium.com/we-talk-it/react-native-what-it-is-and-how-it-works-e2182d008f5e)
+- [Workflows - Expo Documentation](https://docs.expo.io/introduction/managed-vs-bare/)
 
 ***
 Mobile Innovation Studio - 2020
