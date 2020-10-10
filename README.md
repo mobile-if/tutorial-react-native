@@ -21,10 +21,10 @@ npm install --global expo-cli
 ```
 Selanjutnya, untuk mengetahui proses instalasi berhasil. Jalankan perintah berikut.
 ```shell script
-expo whoami
+expo
 ```
-Akan muncul informasi versi expo-cli seperti gambar di bawah yang menandakan expo-cli berhasil diinstal.  
-![expo whoami](docs-img/expo-whoami.png)
+Akan muncul daftar perintah expo-cli seperti gambar di bawah yang menandakan expo-cli berhasil diinstal.  
+![expo whoami](docs-img/expo-command.png)
 
 
 ### Membuat Project React Native
