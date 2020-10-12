@@ -7,7 +7,7 @@ JSX atau bisa dibilang extended javascript adalah suatu pengembangan javascript 
 - Kode HTML harus nested. Artinya harus ada 1 tag parent
 ```html
 <!-- Benar -->
-<div className=parent>
+<div>
    <h1>MIS JAGO</h1>
    <h2>Mobile Innovation Studio</h2>
    <p>Pokoknya MIS IMBA!!!</p>
@@ -52,6 +52,7 @@ var myStyle = {
 
 ***
 ## Rendering
+Rendering sangat berkaitan dengan lifecycle React. Metode render harus mengembalikan komponen Asli Bereaksi (elemen JSX) ke render (atau null, untuk tidak menghasilkan apa pun).
 ***
 ## Components
 ***
