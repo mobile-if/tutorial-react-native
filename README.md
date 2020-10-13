@@ -17,7 +17,14 @@ Sebelum memulai membuat navigasi, diperlukan instalasi library dengan perintah p
 ```shell script
 npm install expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view --global expo-cli
 ```
-
+Untuk react native 0.6 keatas *linking* sudah secara otomatis, jika menggunakan versi dibawahnya maka ketikkan
+```shell script
+react native link
+```
+Apabila ingin develop ke ios juga maka perlu install pods dengan mengetikkan perintah dibawah
+```shell script
+npx pod-install ios
+```
 ### Pustaka
 - [Installation - Expo Documentation](https://docs.expo.io/get-started/installation/)
 ***
