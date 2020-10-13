@@ -15,17 +15,47 @@ Sebelum memulai membuat navigasi, diperlukan instalasi library dengan perintah p
 
 - Melalui link pada pra instalasi, jalankan perintah berikut 
 ```shell script
-npm install expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view --global expo-cli
+npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view --global expo-cli
 ```
-Selanjutnya, untuk mengetahui proses instalasi berhasil. Jalankan perintah berikut.
+Perintah diatas akan menginstall library-library berikut.
+
+- Gesture Handler
+- Safe Area
+- 
+Untuk react native 0.6 keatas *linking* sudah secara otomatis, jika menggunakan versi dibawahnya maka ketikkan
 ```shell script
-expo
+react native link
 ```
-Akan muncul daftar perintah expo-cli seperti gambar di bawah yang menandakan expo-cli berhasil diinstal.  
-![expo whoami](docs-img/expo-command.png)
+Apabila ingin develop ke ios juga maka perlu install pods dengan mengetikkan perintah dibawah
+```shell script
+npx pod-install ios
+```
+Selain navigasi utama, diperlukan sebuah library lagi untuk membuat navigasi dalam bentuk bottom tab dengan perintah berikut
+```
+npm install @react-navigation/bottom-tabs --global expo-cli
+```
+### Persiapan Project
+Buat sebuah folder bernama page, lalu buat 5 file pad folder tersebut bernama
+
+- pageOne.js
+- pageTwo.js
+- pageBarContainer.js
+- pageBarOne.js
+- pageBarTwo.js
+- pageBarThree.js
+
+Alur dari project ini nanti akan seperti berikut 
+![navigation-concept](docs-img/navigation-concept.jpg)
+Lalu isi setiap file yang sudah kita buat sebelumnya seperti berikut. 
+
+1. PageOne.js
+   
+Kode            | Output
+:-------------------------:|:-------------------------:
+![kode-satu](docs-img/page-one-kode.jpg)|![output-satu](docs-img/page-one-output.jpg)
 
 ### Pustaka
-- [Installation - Expo Documentation](https://docs.expo.io/get-started/installation/)
+- [Getting Started - React Navigation Documentation](https://reactnavigation.org/docs/getting-started/)
 - [Create a new app - Expo Documentation](https://docs.expo.io/get-started/create-a-new-app/)
 ***
 Mobile Innovation Studio - 2020
