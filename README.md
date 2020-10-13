@@ -52,7 +52,7 @@ Kode            | Output
 :-------------------------:|:-------------------------:
 ![kode-satu](docs-img/page-one-kode.jpg) PageOne.js|![output-satu](docs-img/page-one-output.jpg)
 ![kode-dua](docs-img/page-two-code.jpg) PageTwo.js|![output-dua](docs-img/page-two-output.jpg)
-![kode-dua](docs-img/) PageBarone.js|![output-dua](docs-img/)
+![kode-dua](docs-img/) PageBarOne.js|![output-dua](docs-img/)
 
 ### Membuat navigasi
 
