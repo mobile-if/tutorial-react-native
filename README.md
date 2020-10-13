@@ -52,6 +52,9 @@ Kode            | Output
 :-------------------------:|:-------------------------:
 ![kode-satu](docs-img/page-one-kode.jpg) PageOne.js|![output-satu](docs-img/page-one-output.jpg)
 ![kode-dua](docs-img/page-two-code.jpg) PageTwo.js|![output-dua](docs-img/page-two-output.jpg)
+![kode-dua](docs-img/) PageBarone.js|![output-dua](docs-img/)
+
+### Membuat navigasi
 
 ### Pustaka
 - [Getting Started - React Navigation Documentation](https://reactnavigation.org/docs/getting-started/)
