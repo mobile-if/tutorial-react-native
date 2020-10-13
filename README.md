@@ -66,22 +66,22 @@ Kode            | Output
 ### Membuat navigasi
 1) Pertama <br>
 kita buat file app.js sebagai entry point dari alur. Pada dasarnya navigasi pada aplikasi mobile berbentuk stack (first in last out) sehingga semakin dalam kita menuju ke halaman tertentu maka akan banyak halaman yang dilewati untuk menuju dan kembali ke awal. Pada react digunakan stackNavigator dan NavigationContainer dalam implementasi hal ini, berikut implementasinya. 
-<br/><br/>
+<br/>
 
 <img width="70%" alt="kode-app-nav" src="docs-img/app-kode.jpg">
-<br/><br/>
+<br/>
 
 <span style="background-color: gray; color: white; padding-left: 5px; padding-right: 5px; border-radius: 5px">createStackNavigator</span> adalah fungsi yang mengembalikan objek dengan 2 properti, <span style="background-color: gray; color: white; padding-left: 5px; padding-right: 5px; border-radius: 5px">Screen</span> dan <span style="background-color: gray; color: white; padding-left: 5px; padding-right: 5px; border-radius: 5px">Navigator</span> dimana navigator untuk melakukan operasi di stack nya sedangkan screen sebagai element.
-<br/><br/>
+<br/>
 <span style="background-color: gray; color: white; padding-left: 5px; padding-right: 5px; border-radius: 5px">NavigationContainer</span> adalah komponen untuk manajemen pohon navigasi kita dan berisi navigation state. Isi dari Navigator adalah halaman - halaman yang akan kita sambung satu sama lain (secara otomatis halaman tersebut memiliki props navigation)
 <br/><br/>
 1) Kedua <br>
 kita buat file pageBarContainer.js sebagai container (wadah) dari navigasi bottom tab yang terdiri dari 3 halaman pageBar yang sudah kita buat diatas.
 Berikut implementasinya.
-<br/><br/>
+<br/>
 
 <img width="70%" alt="kode-bottom-nav" src="docs-img/page-bar-container.jpg">
-<br/><br/>
+<br/>
 
 TabNavigator memiliki konsep yang sama dengan StackNavigator hanya berbeda fungsi saja. Setelah mengatur dua file tersebut maka output dari kode kita akan seperti berikut.
 <br><br>
