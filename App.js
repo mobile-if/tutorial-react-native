@@ -6,10 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 // Page
 import PageOne from './page/pageOne';
 import PageTwo from './page/pageTwo';
-import PageBarOne from './page/pageBarOne';
-import PageBarTwo from './page/pageBarTwo';
-import PageBarThree from './page/pageBarThree';
-import PageContainer from './page/pageBarContainer';
+import PageBarContainer from './page/pageBarContainer';
 
 const Stack = createStackNavigator();
 
@@ -19,6 +16,7 @@ export default function App() {
       <Stack.Navigator>
         <Stack.Screen name="PageOne" component={PageOne}/>
         <Stack.Screen name="PageTwo" component={PageTwo}/>
+        <Stack.Screen name="BottomBarContainer" component={PageBarContainer}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

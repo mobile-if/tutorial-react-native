@@ -35,6 +35,10 @@ Apabila ingin develop ke ios juga maka perlu install pods dengan mengetikkan per
 ```shell script
 npx pod-install ios
 ```
+Pada navigasi utama digunakan sejenis stack, kita install dengan mengetikkan perintah.
+``` shell script
+npm install @react-navigation/stack
+```
 Selain navigasi utama, diperlukan sebuah library lagi untuk membuat navigasi dalam bentuk bottom tab dengan perintah berikut
 ```
 npm install @react-navigation/bottom-tabs --global expo-cli

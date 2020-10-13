@@ -7,7 +7,9 @@ class PageBarThree extends React.Component {
             <View style={{
                 display: "flex",
                 justifyContent: "center",
-                alignItems: "center"
+                alignItems: "center",
+                width: '100%',
+                height: '100%'
             }}>
                 <Text>Page Bar Three</Text>
             </View>
