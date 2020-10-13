@@ -22,15 +22,7 @@ npm install @react-navigation/natives
 ```shell script
 npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view --global expo-cli
 ```
-Perintah diatas akan menginstall library-library berikut.
 
-- Gesture Handler
-- Safe Area
-- 
-Untuk react native 0.6 keatas *linking* sudah secara otomatis, jika menggunakan versi dibawahnya maka ketikkan
-```shell script
-react native link
-```
 Apabila ingin develop ke ios juga maka perlu install pods dengan mengetikkan perintah dibawah
 ```shell script
 npx pod-install ios
