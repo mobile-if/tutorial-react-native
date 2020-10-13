@@ -17,16 +17,9 @@ Sebelum memulai membuat navigasi, diperlukan instalasi library dengan perintah p
 ```shell script
 npm install expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view --global expo-cli
 ```
-Selanjutnya, untuk mengetahui proses instalasi berhasil. Jalankan perintah berikut.
-```shell script
-expo
-```
-Akan muncul daftar perintah expo-cli seperti gambar di bawah yang menandakan expo-cli berhasil diinstal.  
-![expo whoami](docs-img/expo-command.png)
 
 ### Pustaka
 - [Installation - Expo Documentation](https://docs.expo.io/get-started/installation/)
-- [Create a new app - Expo Documentation](https://docs.expo.io/get-started/create-a-new-app/)
 ***
 Mobile Innovation Studio - 2020
 
