@@ -13,7 +13,12 @@ Berikut link dokumentasi dari library react navigation
 ### Instalasi Library
 Sebelum memulai membuat navigasi, diperlukan instalasi library dengan perintah pada command prompt (Windows) atau terminal seperti berikut.
 
-- Melalui link pada pra instalasi, jalankan perintah berikut 
+- Melalui link pada pra instalasi, jalankan perintah berikut untuk menginstall library inti
+```shell script
+npm install @react-navigation/natives
+```
+
+- Kemudian ketikkan perintah berikut
 ```shell script
 npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view --global expo-cli
 ```
