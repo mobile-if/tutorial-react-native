@@ -13,7 +13,12 @@ Berikut link dokumentasi dari library react navigation
 ### Instalasi Library
 Sebelum memulai membuat navigasi, diperlukan instalasi library dengan perintah pada command prompt (Windows) atau terminal seperti berikut.
 
-- Melalui link pada pra instalasi, jalankan perintah berikut 
+- Melalui link pada pra instalasi, jalankan perintah berikut untuk menginstall library inti
+```shell script
+npm install @react-navigation/natives
+```
+
+- Kemudian ketikkan perintah berikut
 ```shell script
 npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view --global expo-cli
 ```
@@ -29,6 +34,10 @@ react native link
 Apabila ingin develop ke ios juga maka perlu install pods dengan mengetikkan perintah dibawah
 ```shell script
 npx pod-install ios
+```
+Pada navigasi utama digunakan sejenis stack, kita install dengan mengetikkan perintah.
+``` shell script
+npm install @react-navigation/stack
 ```
 Selain navigasi utama, diperlukan sebuah library lagi untuk membuat navigasi dalam bentuk bottom tab dengan perintah berikut
 ```
