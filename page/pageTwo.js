@@ -9,13 +9,12 @@ class PageTwo extends React.Component {
                 justifyContent: "center", 
                 alignItems: "center"
                 }}>
-                <Text>Page Two</Text>
+                <Text style={{marginBottom: 16}}>Page Two</Text>
                 <Button
-                    title={"Ke Page Bottom Bar"}
-                />
+                    title={"Ke Page Bottom Bar"}/>
+                <View style={{marginVertical: 8}}></View>
                 <Button
-                    title={"Ke Page One"}
-                />
+                    title={"Ke Page One"}/>
             </View>
         );
     }

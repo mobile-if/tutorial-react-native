@@ -47,12 +47,11 @@ Buat sebuah folder bernama page, lalu buat 5 file pad folder tersebut bernama
 Alur dari project ini nanti akan seperti berikut 
 ![navigation-concept](docs-img/navigation-concept.jpg)
 Lalu isi setiap file yang sudah kita buat sebelumnya seperti berikut. 
-
-1. PageOne.js
    
 Kode            | Output
 :-------------------------:|:-------------------------:
-![kode-satu](docs-img/page-one-kode.jpg)|![output-satu](docs-img/page-one-output.jpg)
+![kode-satu](docs-img/page-one-kode.jpg) PageOne.js|![output-satu](docs-img/page-one-output.jpg)
+![kode-dua](docs-img/page-two-code.jpg) PageTwo.js|![output-dua](docs-img/page-two-output.jpg)
 
 ### Pustaka
 - [Getting Started - React Navigation Documentation](https://reactnavigation.org/docs/getting-started/)
