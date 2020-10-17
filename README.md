@@ -46,7 +46,7 @@ Sebelum memulai membuat navigasi, diperlukan instalasi library dengan menjalanka
 
 
 ### Persiapan Project
-Sebelum memulai membuat navigasi, hal yang paling utama adalah membuat screen atau layar yang akan dinavigasi.  
+Sebelum memulai membuat navigasi, hal yang paling utama adalah membuat screen atau layar yang akan dituju.  
 Sehingga pertama buat sebuah folder bernama page, lalu buat 5 file pada folder tersebut bernama :  
 
 - pageOne.js
