@@ -54,7 +54,25 @@ Deklarasi `state` dalam sebuah Class Component seperti ini:
 Dalam program tersebut sebuah tombol akan memerintah fungsi mengganti isi dari sebuah state.  
 
 ***
+## Styling
+Styling di React Native terdapat dua cara,   
+Pertama, langsung dituliskan dalam props component:   
+![style Component](docs-img/styleComponent1.png)    
+component utama (core) dari React Native pasti memiliki props `style`.  
+Dua, menggunakan `StyleSheet` component:  
+define dulu `styles` nya:  
+![style Component](docs-img/styleComponent2.png)    
+gini cara pakenya:  
+![style Component](docs-img/styleComponent3.png)    
+dua kode diatas itu dalam satu file, jika ingin menjadikannya sebuah file `styles.js` sendiri maka tambahkan `export` ke konstanta `styles` :     
+```js
+    export const styles = StyleSheet.create({
+        ...
+    });
+```
+***
 ## Lifecycle
+
 ***
 ## Handling Event
 ***
