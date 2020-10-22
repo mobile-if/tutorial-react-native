@@ -34,11 +34,25 @@ Pada class component, terdapat method khusus yang akan dijalankan saat class ter
 ![Constructor Class Component](docs-img/component-3.png)
 ***
 ## Props
-Props adalah sebuah properti atau karakteristik yang bisa diberikan di sebuah komponen/component. Props sendiri biasanya ditulis di dalam sebuah component tag, dengan nama props tertentu. Untuk lebih jelasnya, berikut adalah contoh penggunaan props di component <Greetings/>, dimana propsnya adalah name.
-![](docs-img/props-1.png)
-Untuk memanggil props sendiri, kita tinggal referensikan saja, misal nama propsnya adalah name, maka props.name akan memanggil properti nama dari komponen tersebut.
+React Native memiliki dua tipe data yang dapat mengkontrol sebuah `component`.
+`props` ditetapkan oleh `parent` dari suatu `component` tersebut dan tidak dapat diperbaiki / diganti (besifat fiex) selama masa pakai komponen. Bisa dibilang `props` adalah parameter default dari suatu `component`.
+
+Berikut contohnya:   
+Pertama Kita buat reuseable `component` dengan default props `name`  
+![GreetingCard Function Component](docs-img/propsComponent.png)  
+Lalu akan kita gunakan seperti ini:   
+![GreetingCard Function Component](docs-img/propsComponent1.png)  
+parameter `name` yang ada dalam component `<GreetingCard />` adalah sebuah `props`
+
 ***
 ## State
+Jika `props` bersifat `fixed` atau tidak dapat dirubah `value`nya. `state` adalah data control di dalam component yang dapat diubah.  
+Deklarasi `state` dalam sebuah Functional Component seperti ini:
+![state Class Component](docs-img/stateComponent1.png)  
+Deklarasi `state` dalam sebuah Class Component seperti ini:
+![state Class Component](docs-img/stateComponent2.png)  
+Dalam program tersebut sebuah tombol akan memerintah fungsi mengganti isi dari sebuah state.  
+
 ***
 ## Lifecycle
 ***
