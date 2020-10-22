@@ -34,6 +34,9 @@ Pada class component, terdapat method khusus yang akan dijalankan saat class ter
 ![Constructor Class Component](docs-img/component-3.png)
 ***
 ## Props
+Props adalah sebuah properti atau karakteristik yang bisa diberikan di sebuah komponen/component. Props sendiri biasanya ditulis di dalam sebuah component tag, dengan nama props tertentu. Untuk lebih jelasnya, berikut adalah contoh penggunaan props di component <Greetings/>, dimana propsnya adalah name.
+![](docs-img/props-1.png)
+Untuk memanggil props sendiri, kita tinggal pointer-kan, misal nama propsnya adalah name, maka props.name akan memanggil properti nama dari komponen tersebut.
 ***
 ## State
 ***
