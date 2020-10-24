@@ -131,7 +131,7 @@ class Clock extends React.Component {
 }
 ```
 
-Cara yang dapat dilakukan adalah dengan melakukan pengubahan state setiap detiknya. Hal tersebut dapat dilakukan dengan menambah _method_ `componentDidMount()` dan mengisinya dengan sebagai berikut.
+Cara yang dapat dilakukan adalah dengan melakukan pengubahan state setiap detiknya. Hal tersebut dapat dilakukan dengan menambah _method_ `componentDidMount()` dan mengisinya seperti di bawah.
 
 ```jsx
 class Clock extends React.Component {
@@ -150,7 +150,7 @@ class Clock extends React.Component {
 
 Pada contoh sebelumnya, kita mengeset interval, dan menyimpannya ke atribut lokal kelas tersebut yaitu `timerID`. Penyimpanan variabel tersebut dimaksudkan agar kita dapat melakukan pembebasan _resource_ agar timer tidak berjalan terus menerus, walau komponennya telah hilang.
 
-Pembebasan _resource_ tersebut dapat dilakukan pada proses pencopotan (_dismounting_) dengan mengisi _method_ `componentWillUnmount` sebagai berikut.
+Pembebasan _resource_ tersebut dapat dilakukan pada proses pencopotan (_dismounting_) dengan mengisi _method_ `componentWillUnmount` seperti di bawah.
 
 ```jsx
 class Clock extends React.Component {
@@ -170,7 +170,7 @@ Karena inspirasi dari paradigma ini berasal pemrograman fungsional, kita juga pe
 
 Sebelumnya komponen fungsional pada React memiliki konsep tersebut, sehingga tidak memungkinkan adanya _lifecycle_. Namun semenjak [rilis 16.8](https://reactjs.org/blog/2019/02/06/react-v16.8.0.html), React memperkenalkan mekanisme agar dapat melakukan hal serupa. Mekanisme tersebut adalah penggunaan _hooks_ `useEffect`.
 
-Pada `useEffect`, kita bekerja dengan efek yang akan terpanggil setiap kali terdapat perubahan pada dependensinya. Oleh karenanya, secara umum kodenya berupa.
+Pada `useEffect`, kita bekerja dengan efek yang akan terpanggil setiap kali terdapat perubahan pada dependensinya. Oleh karenanya, secara umum kodenya seperti di bawah.
 
 ```jsx
 const Component = (props) => {
@@ -216,7 +216,7 @@ useEffect(() => {
 ```
 Kita mengembalikan (_return_) sebuah fungsi, yang nantinya fungsi tersebut akan dijalankan di akhir efek tersebut.
 
-Untuk komponen `Clock` pada contoh sebelumnya, dapat kita lakukan dengan cara.
+Untuk komponen `Clock` pada contoh sebelumnya, dapat kita lakukan dengan cara di bawah.
 
 ```jsx
 const Clock = (props) => {
