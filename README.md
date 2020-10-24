@@ -107,7 +107,7 @@ Secara umum, _lifecycle_ pada komponen dapat digambarkan dengan diagram di bawah
 
 ![Lifecycle React Component](docs-img/lifecycle.png)
 
-Sesuai dengan diagram tersebut komponen dibagi menjadi dua dimensi, yaitu tahapan dan proses. Dimensi tahapan adalah mekanisme internal dari React dalam melakukan modifikasi pada _view_. Sedangkan untuk proses sendiri adalah macam daur yang mungkin terjadi, di mana terdiri dari menempel (_mounting_), memperbarui (_updating_), dan mencopot (_dismounting_). Pada setiap proses kita dapat melakukan perubahan pada item yang berwarna hijau. Perubahan dapat dilakukan dengan cara _override_ pada _method_ tersebut, lalu mengisinya dengan kode yang kita inginkan. 
+Dapat dilihat dapat adanya dua dimensi, yaitu tahapan dan proses. Dimensi tahapan adalah mekanisme internal dari React dalam melakukan modifikasi pada _view_. Sedangkan untuk proses sendiri adalah macam daur yang mungkin terjadi, di mana terdiri dari menempel (_mounting_), memperbarui (_updating_), dan mencopot (_dismounting_). Pada setiap proses kita dapat melakukan perubahan pada item yang berwarna hijau. Perubahan dapat dilakukan dengan cara _override_ pada _method_ tersebut, lalu mengisinya dengan kode yang kita inginkan. 
 
 Contoh dalam penggunaannya misalkan kita memiliki komponen `Clock` dan kita ingin mengubah _state_ dari komponen tersebut setiap detiknya. 
 
