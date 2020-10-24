@@ -10,11 +10,11 @@ Pada modul ini akan dijelaskan bagaimana cara melakukan navigasi dalam project R
 Dalam melakukan perpindahan layar antara layar satu dengan yang lain, React Navigation menawarkan 3 jenis navigasi. 
 
 1. Stack Navigator  
-    <video src="https://reactnavigation.org/assets/navigators/stack/stack.mov" height="450px" autoplay loop>
+    <img height="450px" alt="stack-nav" src="docs-gif/stack.gif">
 2. Drawer Navigator  
-    <video src="https://reactnavigation.org/assets/navigators/drawer/drawer.mov" height="450px" autoplay loop>
+    <img height="450px" alt="drawer-nav" src="docs-gif/drawer.gif">
 3. Tab Navigator (bottom tab dan top tab)  
-    <video src="https://reactnavigation.org/assets/navigators/tabs/bottom-tabs-demo.mov" height="450px" autoplay loop>
+    <img height="450px" alt="tab-nav" src="docs-gif/bottom-tabs-demo.gif">
 
 Dari ketiga jenis navigasi di atas, untuk saat ini materi pada modul ini akan membahas tentang Stack Navigation dan Bottom Tab Navigator.
 
