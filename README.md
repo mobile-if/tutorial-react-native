@@ -107,7 +107,7 @@ Secara umum, _lifecycle_ pada komponen dapat digambarkan dengan diagram di bawah
 
 ![Lifecycle React Component](docs-img/lifecycle.png)
 
-Dapat dilihat dapat adanya dua dimensi, yaitu tahapan dan proses. Dimensi tahapan adalah mekanisme internal dari React dalam melakukan modifikasi pada _view_. Sedangkan untuk proses sendiri adalah macam daur yang mungkin terjadi, di mana terdiri dari menempel (_mounting_), memperbarui (_updating_), dan mencopot (_dismounting_). Pada setiap proses kita dapat melakukan perubahan pada item yang berwarna hijau. Perubahan dapat dilakukan dengan cara _override_ pada _method_ tersebut, lalu mengisinya dengan kode yang kita inginkan. 
+Dapat dilihat adanya dua dimensi, yaitu tahapan dan proses. Dimensi tahapan adalah mekanisme internal dari React dalam melakukan modifikasi pada _view_. Sedangkan untuk proses sendiri adalah macam daur yang mungkin terjadi, di mana terdiri dari menempel (_mounting_), memperbarui (_updating_), dan mencopot (_dismounting_). Pada setiap proses kita dapat melakukan perubahan pada item yang berwarna hijau. Perubahan dapat dilakukan dengan cara _override_ pada _method_ tersebut, lalu mengisinya dengan kode yang kita inginkan. 
 
 Contoh dalam penggunaannya misalkan kita memiliki komponen `Clock` dan kita ingin mengubah _state_ dari komponen tersebut setiap detiknya. 
 
@@ -238,13 +238,69 @@ Salah satu keunggulan dari penggunaan useEffect sendiri adalah dimungkinkannya p
 ***
 ### Handling Event
 
+Dalam penanganan _event_ dapat dilakukan dengan memberikan _callback function_ pada props yang ada di komponen tersebut. Props ini umumnya memiliki prefix _on-_ seperti `onClick`, `onTouchStart`, `onTouchEnd`, dll.
+
+Contoh penggunaan untuk komponen `Button` nantinya menjadi seperti di bawah.
+
+```jsx
+<Button
+    onPress={() => {/* do things here */}}
+/>
+```
+
+Atau bisa juga melakukan _passing function_ berupa fungsi yang telah didefiniskan sebelumnya.
+
+```jsx
+const Toggle = (props) => {
+    const [isToggleOn, setToggle] = useState(false);
+
+    const toggle = () => setToggle(!state);
+
+    return (
+        <Button 
+            onPress={toggle} 
+            title={isToggleOn ? "On" : "Off"} 
+        />
+    );
+}
+```
+
+Untuk _class component_ sendiri, jika kita perlu mengakses `this` dalam kelas tersebut, maka kita perlu melakukan _binding_ di konstruktornya terlebih dahulu.
+
+```jsx
+class Toggle extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {isToggleOn: true};
+    
+    this.handleClick = this.handleClick.bind(this);  
+  }
+
+  handleClick() {    
+    this.setState(state => ({
+      isToggleOn: !state.isToggleOn
+    }));  
+  }
+  
+  render() {
+    return (
+      <Button 
+        onPress={toggle} 
+        title={isToggleOn ? "On" : "Off"} 
+      />
+    );
+  }
+}
+
+```
 
 ***
 ### Pustaka
 - [React JSX - w3schools.com](https://www.w3schools.com/react/react_jsx.asp)
 - [Introducing JSX - React](https://reactjs.org/docs/introducing-jsx.html)
-- [State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
-- [React Lifecycle Diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
+- [State and Lifecycle - React](https://reactjs.org/docs/state-and-lifecycle.html)
+- [React Lifecycle Diagram - @wojtekmaj](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
+- [Handling Events - React](https://reactjs.org/docs/handling-events.html)
 
 ***
 Mobile Innovation Studio - 2020
