@@ -265,7 +265,7 @@ const Toggle = (props) => {
 }
 ```
 
-Untuk _class component_ sendiri, jika kita perlu mengakses `this` dalam kelas tersebut, maka kita perlu melakukan _binding_ di konstruktornya terlebih dahulu.
+Untuk _class component_ sendiri, jika kita perlu mengakses `this` dalam kelas tersebut, maka kita perlu melakukan _binding_ di konstruktornya terlebih dahulu. Hal ini dikarenakan fungsi dalam _JavaScript_ memiliki skop tersendiri, maka _binding_ eksplisit diperlukan.
 
 ```jsx
 class Toggle extends React.Component {
@@ -285,14 +285,64 @@ class Toggle extends React.Component {
   render() {
     return (
       <Button 
-        onPress={toggle} 
+        onPress={this.handleClick} 
         title={isToggleOn ? "On" : "Off"} 
       />
     );
   }
 }
-
 ```
+
+Ada cara penulisan lain yang dapat dilakukan untuk menghindari _binding_ eksplisit yaitu dengan penggunaan _arrow function_ saat pengisian fungsi _callback_.
+
+```jsx
+class Toggle extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {isToggleOn: true};
+  }
+
+  // ...
+
+  render() {
+    return (
+      <Button 
+        onPress={() => this.handleClick()} 
+        title={isToggleOn ? "On" : "Off"} 
+      />
+    );
+  }
+}
+```
+
+Hal itu dapat bekerja dikarenakan _arrow function_ sendiri memiliki skop leksikal anonim dan kita melakukan _passing_ item `this` dari kelas `Toggle` ke fungsi tersebut.
+
+Cara lain yang dapat dilakukan adalah dengan memanfaatkan plugin transformer eksperimental [_public class field syntax_](https://babeljs.io/docs/plugins/transform-class-properties/). Terdapat perubahan penulisan method menjadi _field_ dan mengisinya dengan _arrow function_.
+
+```jsx
+class Toggle extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {isToggleOn: true};
+  }
+
+  handleClick = () => {    
+    this.setState(state => ({
+      isToggleOn: !state.isToggleOn
+    }));  
+  }
+
+  render() {
+    return (
+      <Button 
+        onPress={this.handleClick} 
+        title={isToggleOn ? "On" : "Off"} 
+      />
+    );
+  }
+}
+```
+
 
 ***
 ### Pustaka
