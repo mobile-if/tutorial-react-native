@@ -1,21 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
+import {MahasiswaComponent} from "./app/MahasiswaComponent";
+import {ClassComponent} from "./app/ClassComponent";
+import {styles} from "./app/Style";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <View style={[styles.container, styles.khusus, {marginTop: 100}]}>
+      <MahasiswaComponent nama={"MIS"} nrp={"051117400"}/>
+      <ClassComponent nama={"MIS"} nrp={"051117400"}/>
       <StatusBar style="auto" />
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
