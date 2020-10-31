@@ -253,6 +253,7 @@ kita akan menggunakan api cnn indonesia (*unofficial*) https://github.com/rizki4
 
     ### Hasil akhir
     Hasil dari modul ini akan seperti berikut.
+    
     ![gif_hasil](image_md/gif_hasil.gif)
 
 ## Pustaka
