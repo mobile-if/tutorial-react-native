@@ -6,18 +6,26 @@ Tutorial membuat aplikasi mobile dengan menggunakan React Native Expo
 Pada modul ini akan dijelaskan bagaimana cara mengonsumsi API menggunakan fetch mdn.
 
 ## Tentang API
-API adalah akronim dari *Application Programming Interface* dimana memungkinkan pengembang untuk mengkomunikasikan dua bagian dari satu aplikasi yang sama atau aplikasi yang berbeda secara bersamaan. Disini kita akan menggunakan web api yang dapat diakses melalui protokol *http*. Singkatnya nanti ada suatu data yang disediakan oleh server yang dapat diakses secara publik dengan *http request*.
+API adalah akronim dari *Application Programming Interface* dimana memungkinkan pengembang untuk mengkomunikasikan dua bagian dari satu aplikasi yang sama atau aplikasi yang berbeda secara bersamaan. Di sini kita akan menggunakan web api yang dapat diakses melalui protokol *http*. Singkatnya nanti ada suatu data yang disediakan oleh server yang dapat diakses secara publik dengan *http request*.
 
 ## Tentang JSON
-<!-- Todo -->
+
+JSON memiliki kepanjangan dari *JavaScript Object Notation*. Sesuai namanya, dalam format ini, data direpresentasikan sebagai objek seperti di JavaScript, di mana secara umum berbentuk *map* dengan *key* string dan *value* berupa objek (*nested*), array, atau tipe primitif pada JavaScript. Format ini merupakan salah bentuk data yang dapat digunakan untuk berkomunikasi antar API.
 
 ## Persiapan Project
 Sebelum memulai modul ini pastikan kebutuhan dibawah ini telah terpenuhi.
-- [Postman] https://www.postman.com/downloads/ (untuk menguji respon API)
+- [Postman](https://www.postman.com/downloads/) (untuk menguji respon API)
 
 kita akan menggunakan api cnn indonesia (*unofficial*) https://github.com/rizki4106/cnnindonesia-news-api dan modul ini menggunakan index semua berita.
 
 ## Fetch API
+
+Secara umum, [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) adalah salah satu API yang disediakan oleh browser atau *engine* JavaScript tertentu. Fetch merupakan API asinkron, di mana kita dia akan mengembalikan objek *Promise*.
+
+Sesuai dengan API asinkron lainnya, kita dapat menangani hasil dari *request* dengan *chaining callback* atau dalam konstruksi *async*/*await*. Promise yang dihasilkan akan *rejected* jika mengalami `NetworkError` di mana terjadi kesalahan dalam proses pengiriman/penerimaan paket. Sedangan hasil akan *resolved* jika paket-paket data dapat diterima dengan baik, meskipun hasilnya memiliki *HTTP status error* (seperti error 4xx, 5xx).
+
+Kita dapat menggunakan Fetch API di React Native, salah satu contoh penggunaan dapat mengikuti di bawah ini.
+
 1. Memeriksa respon dengan postman
 
     Tahap ini diperlukan untuk mendapatkan respon - respon yang kita perlukan (dimana nantinya yang akan ditampilkan di aplikasi). Pertama buka aplikasi postman yang sudah diinstall kemudian masukkan requestnya seperti berikut.
@@ -257,9 +265,10 @@ kita akan menggunakan api cnn indonesia (*unofficial*) https://github.com/rizki4
     ![gif_hasil](image_md/gif_hasil.gif)
 
 ## Pustaka
-- (Daftar API publik) https://github.com/farizdotid/DAFTAR-API-LOKAL-INDONESIA
-- (React Native Networking) https://reactnative.dev/docs/network/
-- https://reactnative.dev/docs/flatlist/
+- [Daftar API publik](https://github.com/farizdotid/DAFTAR-API-LOKAL-INDONESIA)
+- [React Native Networking](https://reactnative.dev/docs/network/)
+- [React Native Component: FlatList](https://reactnative.dev/docs/flatlist/)
+- [Fetch API Reference](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 
 ***
 Mobile Innovation Studio - 2020
