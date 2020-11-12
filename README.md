@@ -27,7 +27,7 @@ Sebelum memulai membuat navigasi, diperlukan instalasi library dengan menjalanka
 
 -   Pertama, jalankan perintah berikut untuk menginstall library inti
     ```shell script
-    npm install @react-navigation/natives
+    npm install @react-navigation/native
     ```
 
 -   Kemudian ketikkan perintah berikut untuk menginstal dependensi yang diperlukan oleh React Navigation
